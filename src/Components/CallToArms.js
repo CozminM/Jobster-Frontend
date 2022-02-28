@@ -62,7 +62,8 @@ export default function CallToArms() {
                 <a type="button" href="/register"
                         className="py-2 px-4  bg-white hover:bg-gray-100
                         text-black w-full text-center text-base font-semibold
-                        shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                        shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2
+                        focus:ring-gray rounded-lg ">
                     Create account
                 </a>
             </div>

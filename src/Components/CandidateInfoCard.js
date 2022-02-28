@@ -2,6 +2,18 @@ import React from "react";
 
 export default function CandidateInfoCard() {
 
+    const scroll = () => {
+        const section = document.getElementById("candidateForm")
+        section.scrollIntoView( { behavior: 'smooth', block: 'start' } )
+    };
+
+    const toggleForm = () => {
+        if(!document.getElementById("companyForm").classList.contains("hidden")){
+            document.getElementById("companyForm").classList.toggle("hidden")
+        }
+        document.getElementById("candidateForm").classList.toggle("hidden")
+    }
+
     return(
         <div className="rounded-lg shadow-lg overflow-hidden mb-4 divide-y-2 divide-white">
             <div className="px-6 py-8 bg-gray-800 sm:p-10 sm:pb-6">
@@ -66,7 +78,9 @@ export default function CandidateInfoCard() {
                 <div className="mt-6 rounded-md shadow">
                     <button className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6
                     font-medium rounded-md text-white bg-purple-800 focus:outline-none focus:shadow-outline transition duration-150
-                    ease-in-out" id="candidateButton" onClick={() => document.getElementById("candidateForm").classList.toggle("hidden")}>
+                    ease-in-out" id="candidateButton" onClick={() => {
+                        toggleForm()
+                        scroll()}}>
                         Register as candidate
                     </button>
                 </div>

@@ -3,6 +3,7 @@ import CandidateInfoCard from "../Components/CandidateInfoCard";
 import CompanyInfoCard from "../Components/CompanyInfoCard";
 import CandidateRegisterForm from "../Components/CandidateRegisterForm";
 import image from "../Images/landingPage.jpg";
+import CompanyRegisterForm from "../Components/CompanyRegisterForm";
 
 export default function RegisterPage() {
 
@@ -15,6 +16,7 @@ export default function RegisterPage() {
                 </div>
                 <div className="grid justify-items-center p-6">
                     <CandidateRegisterForm/>
+                    <CompanyRegisterForm/>
                 </div>
             </div>
         </>

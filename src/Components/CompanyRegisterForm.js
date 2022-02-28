@@ -1,14 +1,13 @@
 import React from "react";
 
-export default function CandidateRegisterForm() {
-
+export default function CompanyRegisterForm() {
 
     return(
-        <div className="hidden block p-6 rounded-lg shadow-lg bg-gray-800 max-w-md" id="candidateForm">
+        <div className="hidden block p-6 rounded-lg shadow-lg bg-gray-800 max-w-md" id="companyForm">
             <div className="flex justify-center">
                     <span className="inline-flex px-4 py-4 text-white rounded-full text-2xl leading-5 font-semibold tracking-wide
                     uppercase">
-                        Candidate Registration
+                        Company Registration
                     </span>
             </div>
             <form>
@@ -17,26 +16,26 @@ export default function CandidateRegisterForm() {
                         <input type="text" className="form-control block w-full px-3 py-1.5 text-base font-normal
                         text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition
                         ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                        id="exampleInput123" aria-describedby="emailHelp123" placeholder="First name"/>
+                               id="exampleInput123" aria-describedby="emailHelp123" placeholder="First name"/>
                     </div>
                     <div className="form-group mb-6">
                         <input type="text" className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700
                         bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0
                         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput124"
-                        aria-describedby="emailHelp124" placeholder="Last name"/>
+                               aria-describedby="emailHelp124" placeholder="Last name"/>
                     </div>
                 </div>
                 <div className="form-group mb-6">
                     <input type="email" className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700
                     bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0
                     focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput125"
-                    placeholder="Email address"/>
+                           placeholder="Email address"/>
                 </div>
                 <div className="form-group mb-6">
                     <input type="password" className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700
                     bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0
                     focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput126"
-                    placeholder="Password"/>
+                           placeholder="Password"/>
                 </div>
                 {/*<div className="form-group form-check text-center mb-6">*/}
                 {/*    <input type="checkbox"*/}

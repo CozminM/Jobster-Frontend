@@ -27,12 +27,14 @@ export default function LoginModal() {
             aria-controls="offcanvasRight">Login
             </button>
 
-            <div className="offcanvas offcanvas-end fixed bottom-0 flex flex-col max-w-full bg-white invisible bg-clip-padding shadow-sm outline-none transition duration-300 ease-in-out text-gray-700 top-0 right-0 border-none w-96"
+            <div className="offcanvas offcanvas-end fixed bottom-0 flex flex-col max-w-full bg-white invisible bg-clip-padding
+            shadow-sm outline-none transition duration-300 ease-in-out text-gray-700 top-0 right-0 border-none w-96"
             tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div className="offcanvas-header flex items-center justify-between p-4">
                     <h5 className="offcanvas-title mb-2 leading-normal font-semibold" id="offcanvasRightLabel"/>
-                    <button type="button" className="btn-close box-content w-4 h-4 p-2 -my-5 -mr-2 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
-                    data-bs-dismiss="offcanvas" aria-label="Close"/>
+                    <button type="button" className="btn-close box-content w-4 h-4 p-2 -my-5 -mr-2 text-black border-none
+                    rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75
+                    hover:no-underline" data-bs-dismiss="offcanvas" aria-label="Close"/>
                 </div>
                 <div className="offcanvas-body flex-grow overflow-y-auto">
                     <div className="w-full px-2 max-w-md py-8 bg-white" id="loginModal">
@@ -43,8 +45,8 @@ export default function LoginModal() {
                             <form onSubmit={handleSubmit} autoComplete="off">
                                 <div className="flex flex-col mb-2">
                                     <div className="flex relative ">
-                                        <span className="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b
-                                        border-gray-300 text-gray-500 shadow-sm text-sm">
+                                        <span className="rounded-l-md inline-flex items-center px-3 border-t bg-white border-l
+                                        border-b border-gray-300 text-gray-500 shadow-sm text-sm">
                                             <svg width="15" height="15" fill="currentColor" viewBox="0 0 1792 1792"
                                             xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -59,7 +61,7 @@ export default function LoginModal() {
                                         <input type="text"
                                                className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2
                                                px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none
-                                               focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                                               focus:ring-2 focus:ring-gray-800 focus:border-transparent"
                                                placeholder="Your email" onChange={handleInput} value={userData.username} name="username"/>
                                     </div>
                                 </div>
@@ -80,7 +82,7 @@ export default function LoginModal() {
                                         <input type="password"
                                                className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2
                                                px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none
-                                               focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                                               focus:ring-2 focus:ring-gray-800 focus:border-transparent"
                                                placeholder="Your password" onChange={handleInput} value={userData.password} name="password"/>
                                     </div>
                                 </div>
@@ -94,9 +96,9 @@ export default function LoginModal() {
                                 {/*</div>*/}
                                 <div className="flex w-full">
                                     <button type="submit"
-                                            className="py-2 px-4  bg-purple-600 hover:bg-purple-700 focus:ring-purple-500
-                                            focus:ring-offset-purple-200 text-white w-full transition ease-in duration-200 text-center
-                                            text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg">
+                                            className="py-2 px-4  bg-gray-600 hover:bg-gray-800 text-white w-full transition
+                                            ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none
+                                            focus:ring-2 focus:ring-offset-2 rounded-lg">
                                         Login
                                     </button>
                                 </div>
